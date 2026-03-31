@@ -21,3 +21,14 @@ A web-based ASP.NET MVC project for managing students, departments, attendance, 
 
 ## Database
 Included: studenthub_db.sql
+
+## 🖼️ Screenshots
+
+### Dashboard
+![Dashboard](assets/dashboard.png)
+
+### Students List
+![Students](assets/students.png)
+
+### Add Student
+![Add Student](assets/add-student.png)
