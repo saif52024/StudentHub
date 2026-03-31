@@ -1,0 +1,104 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="container py-5">
+    <h1 class="text-center mb-4">📊 Dashboard Overview</h1>
+
+    <!-- Stats Cards -->
+    <div class="row g-4 justify-content-center mb-5">
+        <div class="col-md-3">
+            <div class="glass text-center py-4">
+                <h5 class="text-info">Total Students</h5>
+                <h2 class="fw-bold text-white">@ViewBag.TotalStudents</h2>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="glass text-center py-4">
+                <h5 class="text-info">Departments</h5>
+                <h2 class="fw-bold text-white">@ViewBag.TotalDepartments</h2>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="glass text-center py-4">
+                <h5 class="text-info">Average Marks (%)</h5>
+                <h2 class="fw-bold text-white">@ViewBag.AvgMarks</h2>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="glass text-center py-4">
+                <h5 class="text-info">Attendance Rate</h5>
+                <h2 class="fw-bold text-white">@ViewBag.AttendanceRate%</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charts Section -->
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="glass p-4">
+                <h5 class="text-info mb-3">Department Distribution</h5>
+                <canvas id="deptChart" width="400" height="300"></canvas>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="glass p-4">
+                <h5 class="text-info mb-3">Attendance Overview</h5>
+                <canvas id="attendanceChart" width="400" height="300"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    // ==== DEPARTMENT DISTRIBUTION CHART ====
+    const deptCtx = document.getElementById('deptChart').getContext('2d');
+    const deptChart = new Chart(deptCtx, {
+        type: 'pie',
+        data: {
+            labels: @Html.Raw(Json.Serialize(ViewBag.DepartmentNames)),
+            datasets: [{
+                data: @Html.Raw(Json.Serialize(ViewBag.DepartmentCounts)),
+                backgroundColor: [
+                    'rgba(0,198,255,0.6)',
+                    'rgba(255,99,132,0.6)',
+                    'rgba(255,206,86,0.6)',
+                    'rgba(75,192,192,0.6)',
+                    'rgba(153,102,255,0.6)',
+                    'rgba(255,159,64,0.6)'
+                ],
+                borderColor: 'rgba(255,255,255,0.1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            plugins: { legend: { labels: { color: '#fff' } } }
+        }
+    });
+
+    // ==== ATTENDANCE OVERVIEW CHART ====
+    const attCtx = document.getElementById('attendanceChart').getContext('2d');
+    const attChart = new Chart(attCtx, {
+        type: 'bar',
+        data: {
+            labels: ['Present', 'Absent'],
+            datasets: [{
+                label: 'Count',
+                data: @Html.Raw(Json.Serialize(ViewBag.AttendanceData)),
+                backgroundColor: ['rgba(0,198,255,0.6)', 'rgba(255,99,132,0.6)'],
+                borderColor: 'rgba(255,255,255,0.1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                x: { ticks: { color: '#fff' } },
+                y: { ticks: { color: '#fff' }, beginAtZero: true }
+            },
+            plugins: { legend: { labels: { color: '#fff' } } }
+        }
+    });
+</script>

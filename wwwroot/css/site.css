@@ -1,0 +1,371 @@
+﻿<style >
+/* ====== GLOBAL THEME ====== */
+body {
+    background: radial-gradient(circle at top left, #0d0d0d, #000000);
+    color: #e0e0e0;
+    font-family: "Inter", "Segoe UI", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ====== NAVBAR ====== */
+.navbar {
+    background: rgba(20, 20, 20, 0.75);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+    .navbar a.nav-link {
+        color: #aaa !important;
+        transition: color 0.2s ease;
+    }
+
+        .navbar a.nav-link:hover,
+        .navbar a.nav-link.active {
+            color: #00c6ff !important;
+        }
+
+.navbar-brand {
+    color: #00c6ff !important;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* ====== MAIN ====== */
+main {
+    flex: 1;
+    padding-top: 90px;
+    padding-bottom: 40px;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #00c6ff;
+    font-weight: 600;
+}
+
+/* ====== GLASS CONTAINERS ====== */
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(16px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    color: #eaeaea;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .glass:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    }
+
+/* ====== TABLES ====== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 12px;
+    overflow: hidden;
+    color: #f1f1f1;
+}
+
+thead {
+    background: rgba(255, 255, 255, 0.08);
+    color: #00c6ff;
+}
+
+th, td {
+    padding: 14px 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+tbody tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* ====== BUTTONS ====== */
+.btn {
+    background: rgba(0, 198, 255, 0.15);
+    border: 1px solid rgba(0, 198, 255, 0.3);
+    color: #00c6ff;
+    border-radius: 12px;
+    padding: 8px 16px;
+    transition: all 0.25s ease;
+}
+
+    .btn:hover {
+        background: rgba(0, 198, 255, 0.25);
+        color: #fff;
+        box-shadow: 0 0 10px rgba(0, 198, 255, 0.4);
+        transform: translateY(-1px);
+    }
+
+a {
+    color: #00c6ff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+    a:hover {
+        color: #33d7ff;
+    }
+
+/* ====== FOOTER ====== */
+footer {
+    background: rgba(15, 15, 15, 0.8);
+    color: #888;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* ====== ANIMATIONS ====== */
+@@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+</style >
+/* ==============================
+   📏 Base & Responsive Settings
+   ============================== */
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* ==============================
+   🌈 Gradient Background & Base Body
+   ============================== */
+body {
+    margin-bottom: 60px;
+    background: linear-gradient(135deg, rgba(0, 0, 40, 0.9), rgba(0, 30, 60, 0.9), rgba(0, 80, 120, 0.9));
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* ==============================
+   ✨ Focus States (Bootstrap Overrides)
+   ============================== */
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #00d4ff;
+}
+
+/* ==============================
+   🌫️ Frosted Glass Containers
+   ============================== */
+.card,
+.table,
+.modal-content,
+form,
+.dropdown-menu,
+.glass-card, .card, .container, .table-responsive {
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+    .glass-card:hover {
+        transform: scale(1.01);
+    }
+
+/* ==============================
+   🪩 Table Styling
+   ============================== */
+.table {
+    background: rgba(255, 255, 255, 0.05) !important;
+    color: #fff !important;
+    border-collapse: collapse;
+    width: 100%;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 1rem;
+}
+
+    /* Make header and rows translucent */
+    .table th {
+        background: rgba(255, 255, 255, 0.15) !important;
+        color: #9ee8ff !important;
+        font-weight: 600;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .table td {
+        background: rgba(255, 255, 255, 0.05) !important;
+        color: #fff !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .table tr:hover td {
+        background: rgba(255, 255, 255, 0.15) !important;
+    }
+
+/* ==============================
+   🧃 Dropdowns & Selects
+   ============================== */
+select.form-control,
+.dropdown-menu {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    border-radius: 0.75rem;
+}
+
+    select.form-control option {
+        background: rgba(30, 30, 50, 0.95);
+        color: #fff;
+    }
+
+/* ==============================
+   💡 Neon Buttons
+   ============================== */
+.btn-info,
+.btn-glass-primary {
+    background: rgba(0, 200, 255, 0.15);
+    border: 1px solid rgba(0, 200, 255, 0.4);
+    color: #00d4ff;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+    .btn-info:hover,
+    .btn-glass-primary:hover {
+        background: rgba(0, 200, 255, 0.3);
+        box-shadow: 0 0 10px #00d4ff;
+        color: #fff;
+    }
+
+.btn-outline-light {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+}
+
+    .btn-outline-light:hover {
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+/* Glass Buttons */
+.btn-glass {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #9ee8ff;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    margin: 0 4px;
+    padding: 5px 14px;
+}
+
+    .btn-glass:hover {
+        background: rgba(0, 200, 255, 0.2);
+        color: #fff;
+        box-shadow: 0 0 10px #00d4ff;
+    }
+
+.btn-glass-danger {
+    background: rgba(255, 60, 60, 0.1);
+    border: 1px solid rgba(255, 100, 100, 0.4);
+    color: #ff8686;
+}
+
+    .btn-glass-danger:hover {
+        background: rgba(255, 60, 60, 0.25);
+        color: #fff;
+        box-shadow: 0 0 10px #ff6b6b;
+    }
+
+/* ==============================
+   🌫 Form Inputs
+   ============================== */
+input.form-control,
+textarea.form-control {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 0.75rem;
+}
+
+    input.form-control:focus,
+    textarea.form-control:focus {
+        border-color: #00d4ff;
+        box-shadow: 0 0 10px #00d4ff;
+        background: rgba(0, 200, 255, 0.05);
+    }
+
+/* ==============================
+   🌫 Navbar & Footer (Glass Effect)
+   ============================== */
+.navbar,
+footer {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* ==============================
+   ✨ Headings Glow
+   ============================== */
+h1, h2, h3, h4, h5 {
+    text-shadow: 0 0 10px rgba(0, 200, 255, 0.5);
+    font-weight: 600;
+}
+
+/* ==============================
+   🌟 Utility Glow Class
+   ============================== */
+.glow-text {
+    text-shadow: 0 0 10px rgba(0, 200, 255, 0.5);
+}
+
+/* ==============================
+   🌠 Smooth Transitions
+   ============================== */
+* {
+    transition: all 0.3s ease;
+}
+
+
+
+
+

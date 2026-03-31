@@ -1,0 +1,41 @@
+@model IEnumerable<StudentHub.Models.Attendance>
+@{
+    ViewData["Title"] = "Attendance";
+}
+
+<div class="container py-4">
+    <h1 class="mb-4 text-center text-info">Attendance Records</h1>
+
+    <div class="mb-3 text-end">
+        <a asp-action="Create" class="btn btn-primary">+ Add Attendance</a>
+    </div>
+
+    <div class="glass p-4">
+        <table class="table table-hover align-middle">
+            <thead>
+                <tr>
+                    <th>Student</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var attendance in Model)
+                {
+                    var color = attendance.Status == "Present" ? "text-success fw-bold" : "text-danger fw-bold";
+                    <tr>
+                        <td>@attendance.Student?.Name</td>
+                        <td>@attendance.Date.ToString("dd MMM yyyy")</td>
+                        <td class="@color">@attendance.Status</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@attendance.AttendanceId" class="btn btn-sm">Edit</a>
+                            <a asp-action="Details" asp-route-id="@attendance.AttendanceId" class="btn btn-sm">Details</a>
+                            <a asp-action="Delete" asp-route-id="@attendance.AttendanceId" class="btn btn-sm">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

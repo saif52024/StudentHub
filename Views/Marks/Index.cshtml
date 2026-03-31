@@ -1,0 +1,49 @@
+@model IEnumerable<StudentHub.Models.Mark>
+@{
+    ViewData["Title"] = "Marks";
+}
+
+<div class="container py-4">
+    <h1 class="mb-4 text-center text-info">Marks Management</h1>
+
+    <div class="mb-3 text-end">
+        <a asp-action="Create" class="btn btn-primary">+ Add New Mark</a>
+    </div>
+
+    <div class="glass p-4 table-container">
+        <table class="table table-hover align-middle">
+            <thead>
+                <tr>
+                    <th>Student</th>
+                    <th>Subject</th>
+                    <th>Marks Obtained</th>
+                    <th>Total Marks</th>
+                    <th>Percentage</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var mark in Model)
+                {
+                    var percent = (mark.TotalMarks > 0)
+                    ? (double)mark.MarksObtained / mark.TotalMarks * 100
+                    : 0;
+                    var color = percent >= 75 ? "text-success" :
+                    percent >= 50 ? "text-warning" : "text-danger";
+                    <tr>
+                        <td>@mark.Student?.Name</td>
+                        <td>@mark.SubjectName</td>
+                        <td>@mark.MarksObtained</td>
+                        <td>@mark.TotalMarks</td>
+                        <td class="@color fw-bold">@percent.ToString("0.0")%</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@mark.MarkId" class="btn btn-sm">Edit</a>
+                            <a asp-action="Details" asp-route-id="@mark.MarkId" class="btn btn-sm">Details</a>
+                            <a asp-action="Delete" asp-route-id="@mark.MarkId" class="btn btn-sm">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

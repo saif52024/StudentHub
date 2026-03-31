@@ -1,0 +1,52 @@
+@model StudentHub.Models.Student
+@{
+    ViewData["Title"] = "Edit Student";
+}
+
+<h2 class="text-info mb-4">Edit Student</h2>
+
+
+<form asp-action="Edit" method="post" class="card p-4 bg-dark bg-opacity-50 border-light rounded-3">
+    <input type="hidden" asp-for="StudentId" />
+
+    <div class="form-group mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control bg-transparent text-white border-secondary" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Age" class="form-label"></label>
+        <input asp-for="Age" class="form-control bg-transparent text-white border-secondary" />
+        <span asp-validation-for="Age" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Gender" class="form-label"></label>
+        <input asp-for="Gender" class="form-control bg-transparent text-white border-secondary" />
+        <span asp-validation-for="Gender" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Semester" class="form-label"></label>
+        <input asp-for="Semester" class="form-control bg-transparent text-white border-secondary" />
+        <span asp-validation-for="Semester" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Contact" class="form-label"></label>
+        <input asp-for="Contact" class="form-control bg-transparent text-white border-secondary" />
+        <span asp-validation-for="Contact" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="DepartmentId" class="form-label">Department</label>
+        <select asp-for="DepartmentId"
+                asp-items="@(new SelectList(ViewBag.Departments, "DepartmentId", "DepartmentName"))"
+                class="form-control bg-transparent text-white border-secondary"></select>
+        <span asp-validation-for="DepartmentId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-info mt-3">Save</button>
+    <a asp-action="Index" class="btn btn-outline-light mt-3">Back</a>
+</form>

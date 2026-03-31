@@ -1,0 +1,39 @@
+@model IEnumerable<StudentHub.Models.Department>
+@{
+    ViewData["Title"] = "Departments";
+}
+
+<div class="container py-5">
+    <h1 class="mb-4 text-center fw-bold text-info glow-text">Department Management</h1>
+
+    <div class="text-end mb-4">
+        <a asp-action="Create" class="btn btn-glass-primary px-4 py-2">+ Add New Department</a>
+    </div>
+
+    <div class="table-container p-4">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Department Name</th>
+                    <th>Students</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var department in Model)
+                {
+                    <tr>
+                        <td>@department.DepartmentName</td>
+                        <td>@department.Students?.Count()</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@department.DepartmentId" class="btn btn-info btn-sm">Edit</a>
+                            <a asp-action="Details" asp-route-id="@department.DepartmentId" class="btn btn-info btn-sm">Details</a>
+                            <a asp-action="Delete" asp-route-id="@department.DepartmentId" class="btn btn-danger btn-sm">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>

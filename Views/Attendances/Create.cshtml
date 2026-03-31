@@ -1,0 +1,35 @@
+@model StudentHub.Models.Attendance
+@{
+    ViewData["Title"] = "Add Attendance";
+}
+
+<h2 class="text-info mb-4">Record Attendance</h2>
+
+<form asp-action="Create" method="post" class="card p-4 bg-dark bg-opacity-50 border-light rounded-3">
+    <div class="form-group mb-3">
+        <label asp-for="Date" class="form-label"></label>
+        <input asp-for="Date" type="date" class="form-control bg-transparent text-white border-secondary" />
+        <span asp-validation-for="Date" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Status" class="form-label">Status</label>
+        <select asp-for="Status" class="form-control bg-transparent text-white border-secondary">
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+        </select>
+        <span asp-validation-for="Status" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="StudentId" class="form-label">Student</label>
+        <select asp-for="StudentId"
+                asp-items="ViewBag.Students"
+                class="form-control bg-transparent text-white border-secondary"></select>
+
+        <span asp-validation-for="StudentId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-info mt-3">Save</button>
+    <a asp-action="Index" class="btn btn-outline-light mt-3">Back</a>
+</form>

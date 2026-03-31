@@ -1,0 +1,23 @@
+@model StudentHub.Models.Department
+@{
+    ViewData["Title"] = "Department Details";
+}
+
+<div class="container py-4">
+    <h2 class="text-center text-info mb-4">Department Details</h2>
+
+    <div class="glass p-4">
+        <dl class="row">
+            <dt class="col-sm-3">Department Name</dt>
+            <dd class="col-sm-9">@Model.DepartmentName</dd>
+
+            <dt class="col-sm-3">Number of Students</dt>
+            <dd class="col-sm-9">@Model.Students?.Count()</dd>
+        </dl>
+
+        <div class="text-center mt-4">
+            <a asp-action="Edit" asp-route-id="@Model.DepartmentId" class="btn btn-primary">Edit</a>
+            <a asp-action="Index" class="btn btn-secondary ms-2">Back</a>
+        </div>
+    </div>
+</div>

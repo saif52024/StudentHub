@@ -1,0 +1,32 @@
+@model StudentHub.Models.Mark
+@{
+    ViewData["Title"] = "Mark Details";
+}
+
+<div class="container py-4">
+    <h2 class="text-center text-info mb-4">Mark Details</h2>
+
+    <div class="glass p-4">
+        <dl class="row">
+            <dt class="col-sm-3">Student</dt>
+            <dd class="col-sm-9">@Model.Student?.Name</dd>
+
+            <dt class="col-sm-3">Subject</dt>
+            <dd class="col-sm-9">@Model.SubjectName</dd>
+
+            <dt class="col-sm-3">Marks Obtained</dt>
+            <dd class="col-sm-9">@Model.MarksObtained</dd>
+
+            <dt class="col-sm-3">Total Marks</dt>
+            <dd class="col-sm-9">@Model.TotalMarks</dd>
+
+            <dt class="col-sm-3">Percentage</dt>
+            <dd class="col-sm-9 text-info fw-bold">@Model.Percentage.ToString("0.0")%</dd>
+        </dl>
+
+        <div class="text-center mt-4">
+            <a asp-action="Edit" asp-route-id="@Model.MarkId" class="btn btn-primary">Edit</a>
+            <a asp-action="Index" class="btn btn-secondary ms-2">Back</a>
+        </div>
+    </div>
+</div>

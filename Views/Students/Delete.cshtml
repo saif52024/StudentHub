@@ -1,0 +1,29 @@
+@model StudentHub.Models.Student
+@{
+    ViewData["Title"] = "Delete Student";
+}
+
+<div class="container py-4">
+    <h2 class="text-center text-danger mb-4">Delete Student</h2>
+
+    <div class="glass p-4">
+        <h5>Are you sure you want to delete <span class="text-info">@Model.Name</span>?</h5>
+
+        <dl class="row mt-3">
+            <dt class="col-sm-3">Department</dt>
+            <dd class="col-sm-9">@Model.Department?.DepartmentName</dd>
+
+            <dt class="col-sm-3">Semester</dt>
+            <dd class="col-sm-9">@Model.Semester</dd>
+        </dl>
+
+        <form asp-action="Delete" method="post">
+
+            <input type="hidden" asp-for="StudentId" />
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-danger">Delete</button>
+                <a asp-action="Index" class="btn btn-secondary ms-2">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>

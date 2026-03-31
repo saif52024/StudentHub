@@ -1,0 +1,41 @@
+@model StudentHub.Models.Mark
+@{
+    ViewData["Title"] = "Edit Mark";
+}
+
+<h2 class="text-info mb-4">Edit Mark</h2>
+
+<form asp-action="Edit" method="post" class="card p-4 bg-dark bg-opacity-50 border-light rounded-3">
+    <input type="hidden" asp-for="MarkId" />
+
+    <div class="form-group mb-3">
+        <label asp-for="SubjectName" class="form-label"></label>
+        <input asp-for="SubjectName" class="form-control bg-transparent text-white border-secondary" />
+        <span asp-validation-for="SubjectName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="MarksObtained" class="form-label"></label>
+        <input asp-for="MarksObtained" class="form-control bg-transparent text-white border-secondary" />
+        <span asp-validation-for="MarksObtained" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="TotalMarks" class="form-label"></label>
+        <input asp-for="TotalMarks" class="form-control bg-transparent text-white border-secondary" />
+        <span asp-validation-for="TotalMarks" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="StudentId" class="form-label">Student</label>
+        <select asp-for="StudentId"
+                asp-items="ViewBag.Students"
+                class="form-control bg-transparent text-white border-secondary">
+        </select>
+
+        <span asp-validation-for="StudentId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-info mt-3">Save</button>
+    <a asp-action="Index" class="btn btn-outline-light mt-3">Back</a>
+</form>

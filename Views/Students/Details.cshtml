@@ -1,0 +1,35 @@
+@model StudentHub.Models.Student
+@{
+    ViewData["Title"] = "Student Details";
+}
+
+<div class="container py-4">
+    <h2 class="text-center text-info mb-4">Student Details</h2>
+
+    <div class="glass p-4">
+        <dl class="row">
+            <dt class="col-sm-3">Name</dt>
+            <dd class="col-sm-9">@Model.Name</dd>
+
+            <dt class="col-sm-3">Age</dt>
+            <dd class="col-sm-9">@Model.Age</dd>
+
+            <dt class="col-sm-3">Gender</dt>
+            <dd class="col-sm-9">@Model.Gender</dd>
+
+            <dt class="col-sm-3">Semester</dt>
+            <dd class="col-sm-9">@Model.Semester</dd>
+
+            <dt class="col-sm-3">Contact</dt>
+            <dd class="col-sm-9">@Model.Contact</dd>
+
+            <dt class="col-sm-3">Department</dt>
+            <dd class="col-sm-9">@Model.Department?.DepartmentName</dd>
+        </dl>
+
+        <div class="text-center mt-4">
+            <a asp-action="Edit" asp-route-id="@Model.StudentId" class="btn btn-primary">Edit</a>
+            <a asp-action="Index" class="btn btn-secondary ms-2">Back</a>
+        </div>
+    </div>
+</div>

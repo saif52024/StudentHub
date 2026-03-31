@@ -1,0 +1,619 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\visual studio\\projects\\StudentHub\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\controllers\\attendancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\controllers\\attendancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\attendances\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\attendances\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\attendances\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\attendances\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\controllers\\markscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\controllers\\markscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\models\\mark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\models\\mark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\marks\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\marks\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\models\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\models\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\controllers\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\controllers\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\marks\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\marks\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\students\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\students\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\students\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\students\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\students\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\departments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\departments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\marks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\marks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\departments\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\departments\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\departments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\departments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\departments\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\departments\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\marks\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\marks\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\attendances\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\attendances\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\students\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\students\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\students\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\students\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\attendances\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\attendances\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\attendances\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\attendances\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\marks\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\marks\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\departments\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\departments\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|d:\\visual studio\\projects\\studenthub\\studenthub\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91F375F0-0B5F-7195-48BA-4BA793494817}|StudentHub\\StudentHub.csproj|solutionrelative:studenthub\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Attendances\\Delete.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Attendances\\Delete.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Attendances\\Delete.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Attendances\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:27:38.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AttendancesController.cs",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Controllers\\AttendancesController.cs",
+              "RelativeDocumentMoniker": "StudentHub\\Controllers\\AttendancesController.cs",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Controllers\\AttendancesController.cs",
+              "RelativeToolTip": "StudentHub\\Controllers\\AttendancesController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAqwEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T22:51:15.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Attendance.cs",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Models\\Attendance.cs",
+              "RelativeDocumentMoniker": "StudentHub\\Models\\Attendance.cs",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Models\\Attendance.cs",
+              "RelativeToolTip": "StudentHub\\Models\\Attendance.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T19:45:09.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Students\\Edit.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Students\\Edit.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Students\\Edit.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Students\\Edit.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:20:58.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Marks\\Create.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Marks\\Create.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Marks\\Create.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Marks\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:23:49.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T20:15:45.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "StudentHub\\Controllers\\DashboardController.cs",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "StudentHub\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwCYAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T20:14:37.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Attendances\\Create.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Attendances\\Create.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Attendances\\Create.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Attendances\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:28:56.213Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Mark.cs",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Models\\Mark.cs",
+              "RelativeDocumentMoniker": "StudentHub\\Models\\Mark.cs",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Models\\Mark.cs",
+              "RelativeToolTip": "StudentHub\\Models\\Mark.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T19:44:56.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DepartmentsController.cs",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Controllers\\DepartmentsController.cs",
+              "RelativeDocumentMoniker": "StudentHub\\Controllers\\DepartmentsController.cs",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Controllers\\DepartmentsController.cs",
+              "RelativeToolTip": "StudentHub\\Controllers\\DepartmentsController.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAhwHcAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T22:50:05.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MarksController.cs",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Controllers\\MarksController.cs",
+              "RelativeDocumentMoniker": "StudentHub\\Controllers\\MarksController.cs",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Controllers\\MarksController.cs",
+              "RelativeToolTip": "StudentHub\\Controllers\\MarksController.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAswHoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T22:50:41.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "StudentHub\\Models\\Student.cs",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Models\\Student.cs",
+              "RelativeToolTip": "StudentHub\\Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T19:44:11.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Controllers\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "StudentHub\\Controllers\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Controllers\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "StudentHub\\Controllers\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAowCAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T19:46:15.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "StudentHub\\Controllers\\StudentsController.cs",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "StudentHub\\Controllers\\StudentsController.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAhwHAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T22:46:09.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "StudentHub\\Models\\Department.cs",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Models\\Department.cs",
+              "RelativeToolTip": "StudentHub\\Models\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T19:44:35.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Departments\\Delete.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Departments\\Delete.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Departments\\Delete.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Departments\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:25:50.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Program.cs",
+              "RelativeDocumentMoniker": "StudentHub\\Program.cs",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Program.cs",
+              "RelativeToolTip": "StudentHub\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T19:46:59.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Students\\Index.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Students\\Index.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Students\\Index.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Students\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:19:46.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Students\\Details.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Students\\Details.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Students\\Details.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Students\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:21:19.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Marks\\Edit.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Marks\\Edit.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Marks\\Edit.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Marks\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:23:02.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAiwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T20:11:22.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Departments\\Index.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Departments\\Index.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Departments\\Index.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Departments\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:25:09.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Departments\\Details.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Departments\\Details.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Departments\\Details.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Departments\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:25:34.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "StudentHub\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "StudentHub\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAFcBAAAAAAAAAAAAAHABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-12T09:05:25.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Marks\\Details.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Marks\\Details.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Marks\\Details.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Marks\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:23:18.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Marks\\Index.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Marks\\Index.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Marks\\Index.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Marks\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:22:46.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Departments\\Create.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Departments\\Create.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Departments\\Create.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Departments\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:26:09.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Attendances\\Edit.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Attendances\\Edit.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Attendances\\Edit.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Attendances\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:27:12.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\appsettings.json",
+              "RelativeDocumentMoniker": "StudentHub\\appsettings.json",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\appsettings.json",
+              "RelativeToolTip": "StudentHub\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-11T19:42:52.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Students\\Create.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Students\\Create.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Students\\Create.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Students\\Create.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAkwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:22:29.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Students\\Delete.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Students\\Delete.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Students\\Delete.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Students\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:21:46.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Attendances\\Details.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Attendances\\Details.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Attendances\\Details.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Attendances\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:27:26.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Attendances\\Index.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Attendances\\Index.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Attendances\\Index.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Attendances\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:26:57.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Marks\\Delete.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Marks\\Delete.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Marks\\Delete.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Marks\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:23:35.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Departments\\Edit.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Departments\\Edit.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Departments\\Edit.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Departments\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:25:22.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T20:25:23.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "StudentHub\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\visual studio\\projects\\StudentHub\\StudentHub\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "StudentHub\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T22:24:34.446Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
