@@ -3,39 +3,45 @@ using StudentHub.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container
+// Add services
 builder.Services.AddControllersWithViews();
 
-// ✅ Register DbContext BEFORE building the app
+// ✅ Add Session
+builder.Services.AddSession();
+
+// ✅ DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
-        new MySqlServerVersion(new Version(8, 0, 0)) // MySQL 8.x
+        new MySqlServerVersion(new Version(8, 0, 0))
     )
 );
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline
+// Error handling
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
 else
 {
-    app.UseDeveloperExceptionPage(); // ✅ show detailed errors in dev mode
+    app.UseDeveloperExceptionPage();
 }
 
 app.UseStaticFiles();
 
 app.UseRouting();
 
+// ✅ Enable session HERE
+app.UseSession();
+
 app.UseAuthorization();
 
-// ✅ Default MVC route
+// Routes
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}"
+    pattern: "{controller=Account}/{action=Login}/{id?}"
 );
 
 app.Run();

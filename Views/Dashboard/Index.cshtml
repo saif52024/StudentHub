@@ -3,94 +3,140 @@
 }
 
 <div class="container py-5">
-    <h1 class="text-center mb-4">📊 Dashboard Overview</h1>
 
-    <!-- Stats Cards -->
-    <div class="row g-4 justify-content-center mb-5">
+    <!-- 🔥 TITLE -->
+    <h1 class="text-center mb-4 fw-bold text-info">Dashboard Overview</h1>
+
+    <!-- 🔥 STATS CARDS -->
+    <div class="row g-4 justify-content-center mb-4">
         <div class="col-md-3">
             <div class="glass text-center py-4">
-                <h5 class="text-info">Total Students</h5>
+                <h5 class="text-info"><i class="bi bi-people"></i> Total Students</h5>
                 <h2 class="fw-bold text-white">@ViewBag.TotalStudents</h2>
             </div>
         </div>
+
         <div class="col-md-3">
             <div class="glass text-center py-4">
-                <h5 class="text-info">Departments</h5>
+                <h5 class="text-info"><i class="bi bi-building"></i> Departments</h5>
                 <h2 class="fw-bold text-white">@ViewBag.TotalDepartments</h2>
             </div>
         </div>
+
         <div class="col-md-3">
             <div class="glass text-center py-4">
-                <h5 class="text-info">Average Marks (%)</h5>
+                <h5 class="text-info"><i class="bi bi-bar-chart"></i> Average Marks (%)</h5>
                 <h2 class="fw-bold text-white">@ViewBag.AvgMarks</h2>
             </div>
         </div>
+
         <div class="col-md-3">
             <div class="glass text-center py-4">
-                <h5 class="text-info">Attendance Rate</h5>
+                <h5 class="text-info"><i class="bi bi-check-circle"></i> Attendance Rate</h5>
                 <h2 class="fw-bold text-white">@ViewBag.AttendanceRate%</h2>
             </div>
         </div>
     </div>
 
-    <!-- Charts Section -->
+    <!-- 🔥 INSIGHT BOX -->
+    <div class="alert alert-info text-center mb-4">
+        📊 System Insight:
+        @if (ViewBag.AvgMarks > 80)
+        {
+            <span> Overall student performance is excellent 🚀</span>
+        }
+        else
+        {
+            <span> Performance needs improvement ⚠️</span>
+        }
+    </div>
+
+    <!-- 🔥 CHARTS -->
     <div class="row g-4">
         <div class="col-md-6">
             <div class="glass p-4">
                 <h5 class="text-info mb-3">Department Distribution</h5>
-                <canvas id="deptChart" width="400" height="300"></canvas>
+                <canvas id="deptChart"></canvas>
             </div>
         </div>
+
         <div class="col-md-6">
             <div class="glass p-4">
                 <h5 class="text-info mb-3">Attendance Overview</h5>
-                <canvas id="attendanceChart" width="400" height="300"></canvas>
+                <canvas id="attendanceChart"></canvas>
             </div>
         </div>
     </div>
+
+    <!-- 🔥 TOP STUDENTS TABLE -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="glass p-4">
+                <h5 class="text-info mb-3">🏆 Top Students</h5>
+
+                <table class="table table-dark table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Average %</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var s in ViewBag.TopStudents)
+                        {
+                            <tr>
+                                <td>@s.Name</td>
+                                <td>@s.Avg %</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <!-- Chart.js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
-    // ==== DEPARTMENT DISTRIBUTION CHART ====
+    // 🔥 DEPARTMENT CHART
     const deptCtx = document.getElementById('deptChart').getContext('2d');
-    const deptChart = new Chart(deptCtx, {
+    new Chart(deptCtx, {
         type: 'pie',
         data: {
             labels: @Html.Raw(Json.Serialize(ViewBag.DepartmentNames)),
             datasets: [{
                 data: @Html.Raw(Json.Serialize(ViewBag.DepartmentCounts)),
                 backgroundColor: [
-                    'rgba(0,198,255,0.6)',
-                    'rgba(255,99,132,0.6)',
-                    'rgba(255,206,86,0.6)',
-                    'rgba(75,192,192,0.6)',
-                    'rgba(153,102,255,0.6)',
-                    'rgba(255,159,64,0.6)'
-                ],
-                borderColor: 'rgba(255,255,255,0.1)',
-                borderWidth: 1
+                    '#00c6ff',
+                    '#ff6b6b',
+                    '#ffd166',
+                    '#4ecdc4',
+                    '#845ec2',
+                    '#ff9671'
+                ]
             }]
         },
         options: {
-            plugins: { legend: { labels: { color: '#fff' } } }
+            plugins: {
+                legend: { labels: { color: '#fff' } }
+            }
         }
     });
 
-    // ==== ATTENDANCE OVERVIEW CHART ====
+    // 🔥 ATTENDANCE CHART
     const attCtx = document.getElementById('attendanceChart').getContext('2d');
-    const attChart = new Chart(attCtx, {
+    new Chart(attCtx, {
         type: 'bar',
         data: {
             labels: ['Present', 'Absent'],
             datasets: [{
-                label: 'Count',
+                label: 'Students',
                 data: @Html.Raw(Json.Serialize(ViewBag.AttendanceData)),
-                backgroundColor: ['rgba(0,198,255,0.6)', 'rgba(255,99,132,0.6)'],
-                borderColor: 'rgba(255,255,255,0.1)',
-                borderWidth: 1
+                backgroundColor: ['#00c6ff', '#ff6b6b']
             }]
         },
         options: {
@@ -98,7 +144,9 @@
                 x: { ticks: { color: '#fff' } },
                 y: { ticks: { color: '#fff' }, beginAtZero: true }
             },
-            plugins: { legend: { labels: { color: '#fff' } } }
+            plugins: {
+                legend: { labels: { color: '#fff' } }
+            }
         }
     });
 </script>
